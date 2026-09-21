@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>HealthFox AI App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>🦊 HealthFox</h1>
+    <p>Your AI wellness companion</p>
+  </header>
+
+  <!-- Fox Mascot -->
+  <div>
+    <img id="fox" src="fox.png" alt="HealthFox Mascot">
+    <p id="fox-message">Hello! I’m your HealthFox guide 🦊</p>
+  </div>
+
+  <!-- Startup Form -->
+  <section id="startup">
+    <h2>Enter Your Details</h2>
+    <form id="startup-form">
+      <input type="email" name="email" placeholder="Email" required><br>
+      <input type="tel" name="phone" placeholder="Phone" required><br>
+      <input type="number" name="age" placeholder="Age" required><br>
+      <input type="number" name="height" placeholder="Height (cm)" required><br>
+      <input type="number" name="weight" placeholder="Weight (kg)" required><br>
+      <select name="activity">
+        <option>Sedentary</option>
+        <option>Moderate</option>
+        <option>Active</option>
+      </select><br>
+      <select name="diet">
+        <option>None</option>
+        <option>Vegetarian</option>
+        <option>Vegan</option>
+        <option>Halal</option>
+        <option>Ghanaian</option>
+      </select><br>
+      <button type="submit">Generate My Plan</button>
+    </form>
+  </section>
+
+  <!-- Dashboard (hidden until AI generates plan) -->
+  <section id="dashboard" class="hidden">
+    <h2>Your Dashboard</h2>
+    <p id="calories"></p>
+
+    <!-- Meal Plan -->
+    <h3>Meal Plan</h3>
+    <ul id="meals"></ul>
+
+    <!-- Habits -->
+    <h3>Habits</h3>
+    <ul>
+      <li>Drink water 💧</li>
+      <li>Exercise 🏃</li>
+      <li>Sleep well 😴</li>
+    </ul>
+
+    <!-- Water Tracker -->
+    <h3>Water Tracker</h3>
+    <p>Glasses today: <span id="water-count">0</span></p>
+    <button id="water-btn">Add Glass</button>
+
+    <!-- Alarm -->
+    <h3>Wake Up Alarm</h3>
+    <input type="time" id="alarm-time">
+    <button id="alarm-btn">Set Alarm</button>
+    <p id="alarm-status"></p>
+
+    <!-- Progress -->
+    <button onclick="showPage('dashboard','progress')">View Progress 📅</button>
+  </section>
+
+  <!-- Progress -->
+  <section id="progress" class="hidden">
+    <h2>Your Progress Log</h2>
+    <ul id="progress-list"></ul>
+    <button onclick="showPage('progress','dashboard')">Back to Dashboard</button>
+  </section>
+
+  <footer>
+    <p>© 2026 HealthFox. All rights reserved.</p>
+  </footer>
+
+  <!-- Link to external JS -->
+  <script src="app.js"></script>
+</body>
+</html>

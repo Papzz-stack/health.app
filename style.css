@@ -1,0 +1,112 @@
+/* Global styles */
+body {
+  font-family: "Segoe UI", "Roboto", "Noto Sans", Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f9f9f9;
+  color: #333;
+}
+
+/* Header */
+header {
+  background: #ff914d;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+header h1 {
+  margin: 0;
+  font-size: 2.2em;
+}
+header p {
+  margin: 5px 0 0;
+  font-size: 1.1em;
+}
+
+/* Sections */
+section {
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 600px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+/* Hidden and fade animations */
+.hidden { display: none; }
+.fade { animation: fadeIn 1s; }
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/* Fox mascot */
+#fox {
+  width: 120px;
+  display: block;
+  margin: 10px auto;
+}
+.wave { transform: rotate(10deg); transition: transform 0.3s; }
+#fox-message {
+  text-align: center;
+  font-style: italic;
+  margin-top: 10px;
+}
+
+/* Forms */
+form input, form select, form button {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1em;
+}
+form button {
+  background: #ff914d;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+form button:hover {
+  background: #e67e22;
+}
+
+/* Dashboard lists */
+ul {
+  list-style: none;
+  padding: 0;
+}
+ul li {
+  background: #f2f2f2;
+  margin: 5px 0;
+  padding: 8px;
+  border-radius: 6px;
+}
+
+/* Buttons */
+button {
+  padding: 10px 15px;
+  margin-top: 10px;
+  border-radius: 6px;
+  border: none;
+  background: #ff914d;
+  color: white;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+button:hover {
+  background: #e67e22;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 15px;
+  background: #333;
+  color: white;
+  margin-top: 30px;
+  font-size: 0.9em;
+}

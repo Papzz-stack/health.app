@@ -1,2 +1,2 @@
 # health.app
-It shows a woman's linktree bio
+Helps with tracking your health in daily life
